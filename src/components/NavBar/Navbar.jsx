@@ -54,7 +54,7 @@ export default function Navbar() {
             </a>
           </div>
         </div>
-        <MobileProfile isOpen={isOpen} setIsOpen={setIsOpen} />
+        <MobileProfile isOpen={isOpen} />
       </div>
     </nav>
   );
