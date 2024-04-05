@@ -7,7 +7,7 @@ import dailyItems from "../../data/daily-items";
 import { useState } from "react";
 import { useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
+
 import { CiShoppingCart } from "react-icons/ci";
 
 export default function Catalogs() {

@@ -1,6 +1,6 @@
 import ProductCard from "../ProductCard";
 import products from "../../data/products";
-
+import { Swiper, SwiperSlide } from 'swiper/react'
 
 export default function Sales() {
   return (
@@ -62,9 +62,15 @@ export default function Sales() {
         </ul>
       </div>
       <div className="products" id="products-container">
-        {products[0].satisLiderleri.map((product, index) => {
-          return <ProductCard key={index} product = {product}/>
-        })}
+        <Swiper slidesPerView={5} style={{ overflow:'visible', height:'auto' }}>
+          {products[0].satisLiderleri.map((product, index) => {
+            return (
+              <SwiperSlide style={{height:'auto'}} key={index}>
+                <ProductCard product={product} />
+              </SwiperSlide>
+            )
+          })}
+        </Swiper>
       </div>
     </section>
   );

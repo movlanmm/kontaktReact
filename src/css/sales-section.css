@@ -88,18 +88,22 @@
 }
 
 .product-item:hover .product-item-bottom-menu {
-    display: inline;
+    display: flex;
+    transform: translateY(100%);
     box-shadow: 0 10px 12px rgba(0, 0, 0, 0.2);
 }
 
 .product-item-bottom-menu {
     position: absolute;
     left: 0;
+    bottom: 15px;
     background-color: white;
     display: none;
     width: 100%;
     padding: 15px 8px;
     border-radius: 10px;
+    flex-direction: column;
+    transform: translateY(0);
 }
 
 
