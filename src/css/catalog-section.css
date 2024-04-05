@@ -1,0 +1,379 @@
+.catalogs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.catalog {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.catalog .container {
+    max-height: 565px;
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+}
+
+.container .left {
+    width: 18%;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    height: 100%;
+}
+
+.left ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    flex: 0 0 auto;
+    overflow-y: auto;
+}
+
+.left ul li a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 12px;
+    font-size: 14px;
+    color: black;
+}
+
+.left ul li a:hover {
+    color: red;
+}
+
+.left ul li a p {
+    width: 75%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.left ul li:hover .sidebar-menu {
+    display: flex;
+}
+
+.left ul li:hover .left {
+    background-color: red;
+}
+
+.sidebar-menu {
+    width: 78vw;
+    height: 100%;
+    position: absolute;
+    background-color: white;
+    top: 0;
+    left: 18%;
+    display: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    z-index: 99;
+}
+
+.sidebar-catalogs {
+    position: relative;
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 20px 50px;
+    row-gap: 20px;
+    overflow-y: scroll;
+}
+
+.sidebar-item {
+    overflow: hidden;
+}
+
+.sidebar-item a {
+    font-size: 14px;
+    color: rgb(50, 50, 50);
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.sidebar-item ul {
+    row-gap: 1px;
+}
+
+.sidebar-item ul li a {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+.sidebar-images {
+    width: 25%;
+}
+
+.sidebar-images img {
+    width: 100%;
+}
+
+
+.container .middle {
+    height: 100%;
+    width: 62%;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.mySwiper {
+    width: 100%;
+    height: 100%;
+}
+
+.mySwiper img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 10px;
+    padding: 0 10px;
+}
+
+.bottom button {
+    border: none;
+    background-color: transparent;
+    font-size: 14px;
+    color: #777777;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+.bottom button:focus {
+    color: black;
+    border-bottom: 1px solid black;
+}
+
+.bottom button:hover {
+    color: black;
+    border-bottom: 1px solid black;
+}
+
+.container .right {
+    width: 18%;
+    height: 100%;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    /* padding: 20px; */
+}
+
+.right .head {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    padding: 20px 20px 0px;
+}
+
+.right .head-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.right-item img {
+    width: 100%;
+}
+
+.timer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    /* margin: 15px 0; */
+}
+
+.time {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.time span {
+    color: #17a539;
+    font-size: 16px;
+    font-weight: bold
+}
+
+.time em {
+    font-size: 12px;
+    color: #323232;
+}
+
+.line {
+    height: 10px;
+    width: 1px;
+    background-color: lightgray;
+}
+
+.bottom-line {
+    height: 1px;
+    width: 100%;
+    background-color: lightgray;
+    margin-bottom: 15px;
+}
+
+.right-item {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px 20px;
+}
+
+.right p {
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#first {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ff003c;
+    margin-right: 10px;
+}
+
+#second {
+    font-size: 18px;
+    text-decoration: line-through;
+    color: #777777;
+}
+
+#second i {
+    text-decoration: line-through;
+}
+
+.credit-title {
+    font-size: 12px;
+    color: #777777;
+    margin-bottom: 10px;
+}
+
+.basket-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    background-color: #ff003c;
+    color: white;
+    font-size: 14px;
+    padding: 12px 0;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition-duration: 0.15s;
+}
+
+.basket-button:hover {
+    opacity: 0.7;
+}
+
+.right a {
+    font-size: 12px;
+    color: #323232;
+    margin-top: 3px;
+}
+
+.right a:hover {
+    text-decoration: underline;
+}
+
+.brands {
+    background-color: white;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.brands a {
+    border: 1px solid lightgray;
+    /* padding: 15px 2px; */
+    border-radius: 5px;
+    text-align: center;
+    width: 58px;
+}
+
+.brands a img {
+    width: 100%;
+}
+
+.brands a:hover {
+    background-color: lightgray;
+}
+
+.catalog-links {
+    background-color: transparent;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.catalog-links a {
+    display: flex;
+    width: 24%;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+}
+
+.image i {
+    font-size: 16px;
+}
+
+.titles {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.titles :first-child {
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 3px;
+}
+
+.titles :last-child {
+    font-size: 12px;
+    color: #777777;
+}
+
+.offers {
+    width: 100%;
+    height: 500px;
+    background-color: red;
+    z-index: 199;
+}
